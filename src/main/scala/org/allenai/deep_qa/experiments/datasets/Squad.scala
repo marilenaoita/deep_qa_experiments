@@ -48,7 +48,7 @@ object SquadDatasets {
     ("data files" -> List(file))
   }
 
-  val baseDir = "/home/marilena/Dropbox/ONTOLOGY-BUILDING/RESOURCES-DEV/squad/"
+  val baseDir = System.getProperty("user.home")+"/deep_qa_results/squad/"
 
   val trainFile = squadFile(baseDir, "train")
   val trainDataset = squadDataset(baseDir, "train")
